@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./source/css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./source/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="sidebar__avatar">
+                <img src="./source/icons/avatar.png" alt="Avatar">
+                <div class="sidebar__about">
+                    <h3 class="sidebar__name">Sierra Ferguson</h3>
+                    <div class="sidebar__email">s.ferguson@gmail.com</div>
+                </div>
+            </div>
+            <div class="sidebar__nav">
+                <div class="sidebar__nav-item">
+                    <img src="./source/icons/dashboard.svg" alt="dashboard">
+                    <div>Dashboard</div>
+                </div>
+                <div class="sidebar__nav-item">
+                    <img src="./source/icons/tasks.svg" alt="tasks">
+                    <div>Tasks</div>
+                </div>
+                <div class="sidebar__nav-item">
+                    <img src="./source/icons/email.svg" alt="email">
+                    <div>Email</div>
+                </div>
+                <div class="sidebar__nav-item">
+                    <img src="./source/icons/contacts.svg" alt="contacts">
+                    <div>Contacts</div>
+                </div>
+                <div class="sidebar__nav-item">
+                    <img src="./source/icons/chat.svg" alt="chat">
+                    <div>Chat</div>
+                </div>
+                <div class="sidebar__nav-item">
+                    <img src="./source/icons/deals.svg" alt="deals">
+                    <div>Deals</div>
+                </div>
+                <div class="sidebar__nav-item">
+                    <img src="./source/icons/settings.svg" alt="settings">
+                    <div>Settings</div>
+                </div>
+            </div>
+        </aside>
+        <div class="wrapper">
+            <main class="tasks">
+                <p>8 task completed out of 10</p>
+                <div class="tasks__all">
+                    <div class="tasks__progress"></div>
+                </div>
+                <div class="tasks__date">
+                    <p class="tasks__date-item"></p>
+                    <div class="tasks__week">
+                        <div class="tasks__sun">
+                            <div class="weekday">Sun</div>
+                            <div class="day">25</div>
+                        </div>
+                        <div class="tasks__mon">
+                            <div class="weekday"></div>
+                            <div class="day"></div>
+                        </div>
+                        <div class="tasks__tue">
+                            <div class="weekday"></div>
+                            <div class="day"></div>
+                        </div>
+                        <div class="tasks__wed">
+                            <div class="weekday"></div>
+                            <div class="day"></div>
+                        </div>
+                        <div class="tasks__thu">
+                            <div class="weekday"></div>
+                            <div class="day"></div>
+                        </div>
+                        <div class="tasks__fri">
+                            <div class="weekday"></div>
+                            <div class="day"></div>
+                        </div>
+                        <div class="tasks__sat">
+                            <div class="weekday"></div>
+                            <div class="day"></div>
+                        </div>
+                    </div>
+                    <div class="tasks__left">
+                        <div class="tasks__review">
+                            <div class="tasks__title">Send benefit review by Sunday</div>
+                            <div class="tasks__due"><p>Due date: </p> <span></span></div>
+                            <div class="tasks__person">
+                                <img src="./source/icons/george.png" alt="george">
+                                <div class="tasks__name">George Fields</div>
+                            </div>
+                            <button class="tasks__button">Completed</button>
+                        </div>
+                        <div class="tasks__review">
+                            <div class="tasks__title">Invite to office meet-up</div>
+                            <div class="tasks__due"><p>Due date: </p> <span></span></div>
+                            <div class="tasks__person">
+                                <img src="./source/icons/rebecca.png" alt="rebecca">
+                                <div class="tasks__name">Rebecca Moore</div>
+                            </div>
+                            <button class="tasks__button">Completed</button>
+                        </div>
+                        <div class="tasks__review">
+                            <div class="tasks__title">Office meet-up</div>
+                            <div class="tasks__due"><p>Due date: </p> <span></span></div>
+                            <div class="tasks__person">
+                                <img src="./source/icons/lindsey.png" alt="lindsey">
+                                <div class="tasks__name">Lindsey Stroud</div>
+                            </div>
+                            <button class="tasks__button">Completed</button>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <div class="charts">
+                <div class="charts__deals">
+                    <div style="width: 400px;"><canvas id="myChart"></canvas></div>
+                </div>
+                <div class="charts__tasks">
+                    <div style="width: 400px;"><canvas id="myRound"></canvas></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./node_modules/moment/min/moment.min.js"></script>
+    <script src="./node_modules/chart.js/dist/chart.umd.js"></script>
+    <script src="./node_modules/push.js/bin/push.min.js"></script>
+    <script src="./node_modules/push.js/bin/serviceWorker.min.js"></script>
+    <script src="./source/js/app.js"></script>
+    
+</body>
+</html>
